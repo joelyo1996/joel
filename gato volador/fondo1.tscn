@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://imagenes/2d-game-background-11395_imgs_11395_2.jpg" type="Texture" id=1]
+
+[node name="Node2D" type="Sprite"]
+position = Vector2( 514.206, 298.957 )
+scale = Vector2( 0.794467, 0.925261 )
+texture = ExtResource( 1 )
+

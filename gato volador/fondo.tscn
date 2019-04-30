@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 361.279 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 616.912, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 7.03992, 324.092 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 518.854, 8.39381 )
+
+[node name="Node2D" type="RigidBody2D"]
+position = Vector2( -1.82584, 267.767 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.29236, 1.47015 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 569.214, 334.832 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 1018.85, 7.17496 )
+shape = SubResource( 3 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 516.598, -272.649 )
+shape = SubResource( 4 )
+
