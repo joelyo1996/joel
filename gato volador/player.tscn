@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 
-[node name="Node2D" type="KinematicBody2D" groups=[
+[node name="Node2D" type="Node2D" groups=[
 "player",
 ]]
 position = Vector2( 499, 254 )
