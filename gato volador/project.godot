@@ -15,7 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Nuevo proyecto de juego"
+config/name="GATO VOLADOR_1"
+run/main_scene="res://gato.tscn"
 config/icon="res://icon.png"
 
 [rendering]

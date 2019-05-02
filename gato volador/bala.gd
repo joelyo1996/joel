@@ -1,6 +1,6 @@
-extends Node2D
+extends RigidBody2D
 
-var vida_perro=30
+# Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
@@ -10,15 +10,21 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	rotation_degrees += 20
-	position.y -= 7
+	rotation_degrees -= 30
 	
+	position.y += 140
 #	pass
 
 
-
-
-func _on_Area2D_area_entered(area):
+func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
-		
+	
 	pass # Replace with function body.
+
+
+
+
+func _on_proyectil_area_entered(area):
+	queue_free()
+	pass # Replace with function body.
+

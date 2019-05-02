@@ -10,9 +10,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	rotation_degrees += 20
-	position.y -= 7
-	
+	position.y -= 3
 #	pass
 
 
@@ -22,3 +20,6 @@ func _on_Area2D_area_entered(area):
 	queue_free()
 		
 	pass # Replace with function body.
+
+
+
