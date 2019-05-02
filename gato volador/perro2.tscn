@@ -20,5 +20,4 @@ modulate = Color( 1, 0, 0, 1 )
 self_modulate = Color( 1, 0, 1, 1 )
 scale = Vector2( 1.51028, 1.40093 )
 texture = ExtResource( 2 )
-
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

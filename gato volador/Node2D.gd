@@ -1,24 +1,28 @@
-extends Node2D
+extends KinematicBody2D
 
-var vida_perro=30
-# var a = 2
-# var b = "text"
+var player_velocity = Vector2(0,0)
+const K_VELOCITY = 10
+export var vida_max = 100
+export var vida_actual = 100
+var barravida
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	rotation_degrees += 20
-	position.y -= 7
+	barravida = get_tree().get_nodes_in_group("hpj1")
+func _physics_process(delta):
+	#getMove()
+	if Input.is_action_pressed("touch"):
+		player_velocity +=  (get_global_mouse_position() - position).normalized() * K_VELOCITY
+	move_and_slide(player_velocity)
+	actulizar()
 	
-#	pass
-
-
-
-
-func _on_Area2D_area_entered(area):
-	queue_free()
-		
-	pass # Replace with function body.
+func actulizar():
+#	barravida.progresBar.value = barravida.progressBar.value - 10
+#func getMove():
+	if Input.is_action_pressed("ui_right"):
+		player_velocity.x += K_VELOCITY
+	if Input.is_action_pressed("ui_left"):
+		player_velocity.x -= K_VELOCITY
+	if Input.is_action_pressed("ui_up"):
+		player_velocity.y -= K_VELOCITY
+	if Input.is_action_pressed("ui_down"):
+		player_velocity.y += K_VELOCITY
