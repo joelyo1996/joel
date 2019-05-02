@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ProgressBar.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.364706, 0.588235, 0.137255, 1 )
+
+[node name="Node2D" type="CanvasLayer"]
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+margin_left = 21.9917
+margin_top = 27.6932
+margin_right = 155.992
+margin_bottom = 41.6932
+custom_styles/bg = SubResource( 1 )
+value = 100.0
+script = ExtResource( 1 )
