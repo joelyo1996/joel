@@ -1,5 +1,5 @@
 extends Node2D
-var bala = preload("res://perro1.tscn")
+var bala = preload("res://Perro/perro2.tscn")
 
 func _ready():
 	$Timer.start()
@@ -16,5 +16,3 @@ func _on_Timer_timeout():
 	add_child( bli)
 	
 	pass # Replace with function body.
-
-

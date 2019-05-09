@@ -1,7 +1,8 @@
 extends Node2D
-var bala = preload("res://bala.tscn")
+var bala = preload("res://Perro/perro1.tscn")
 
 func _ready():
+	$Timer.start()
 	var bli = bala.instance()
 	add_child( bli)
 	
@@ -15,3 +16,5 @@ func _on_Timer_timeout():
 	add_child( bli)
 	
 	pass # Replace with function body.
+
+
