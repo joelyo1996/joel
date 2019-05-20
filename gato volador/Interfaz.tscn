@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://.import/GLADES-DEMO.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fount.tres" type="DynamicFont" id=2]
+[ext_resource path="res://interfaz.gd" type="Script" id=3]
+
+[sub_resource type="ImageTexture" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[node name="Node" type="Node"]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = SubResource( 1 )
+
+[node name="TituloDelJuego" type="Label" parent="."]
+margin_left = 341.5
+margin_top = 13.5
+margin_right = 732.5
+margin_bottom = 103.5
+custom_fonts/font = SubResource( 2 )
+text = "El Gato Volador"
+align = 1
+valign = 1
+
+[node name="Mensaje" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -233.0
+margin_top = -129.0
+margin_right = 240.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 2 )
+text = "Es un gato que mataron a su esposa los perros y quiere venganza incluso si es hasta la muerte de este"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 253.5
+margin_top = 341.0
+margin_right = -364.5
+script = ExtResource( 3 )
+
+[node name="jugar" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -39.0
+margin_top = -214.0
+margin_right = 137.0
+margin_bottom = -156.0
+custom_fonts/font = SubResource( 3 )
+text = "Jugar"
+
+[node name="salir" type="Button" parent="Control"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -39.0
+margin_top = -160.0
+margin_right = 138.0
+margin_bottom = -102.0
+custom_fonts/font = SubResource( 3 )
+text = "Salir"
+
+[connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
+[connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
+[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]

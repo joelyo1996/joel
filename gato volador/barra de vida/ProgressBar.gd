@@ -16,10 +16,5 @@ func recuperar_vida_parcial():
 	if value>= max_value:
 		value = max_value
 
-func _on_timer_timeout():
-	value = value -golpe
-	if value <=0:
-		value = 0
-		print("perdiste")
-	
+
 	

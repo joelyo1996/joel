@@ -1,6 +1,6 @@
 extends Node2D
-
-var vida_perro=30
+var loading
+# Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
@@ -9,17 +9,10 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	position.y -= 7
+#func _process(delta):
 #	pass
 
 
-
-
-func _on_Area2D_area_entered(area):
-	queue_free()
-		
-	pass # Replace with function body.
-
-
-
+func _on_Timer_timeout():
+	$timer_loading.start()
+	get_tree().change_scene("res://juego.tscn")
