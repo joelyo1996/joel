@@ -14,7 +14,7 @@ func _ready():
 
 
 func _on_jugar_pressed():
-	get_tree().change_scene("res://juego.tscn")
+	get_tree().change_scene("res://loading.tscn")
 
 
 func _on_salir_pressed():

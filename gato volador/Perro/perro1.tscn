@@ -3,7 +3,6 @@
 [ext_resource path="res://Perro/perro1.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 34.8421
 height = 105.724
@@ -21,4 +20,5 @@ modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 self_modulate = Color( 1, 1, 100, 1 )
 scale = Vector2( 1.08224, 2.25 )
 texture = ExtResource( 2 )
+
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

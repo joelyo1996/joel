@@ -6,8 +6,6 @@ var loading
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$timer_loading.start()
-	get_tree().change_scene("res://juego.tscn")
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,4 +14,5 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	pass
+	$timer_loading.start()
+	get_tree().change_scene("res://juego.tscn")

@@ -14,40 +14,40 @@
 [node name="Node2D2" parent="." instance=ExtResource( 1 )]
 
 [node name="generador_enemigo2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 573.758, 4573.21 )
+position = Vector2( 214.32, 3682.21 )
 
 [node name="generador_enemigo3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 506.928, 1427.3 )
+position = Vector2( 187.99, 1356.43 )
 
 [node name="generador_enemigo4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 709.161, 5243.03 )
+position = Vector2( 673.724, 3359.78 )
 
 [node name="generador_enemigo5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 267.751, 1936.32 )
+position = Vector2( 895.502, 1171.88 )
 
 [node name="generador_enemigo7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 159.439, 2154.44 )
+position = Vector2( 361.939, 1850.69 )
 
 [node name="perro1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 176.267, 1249.82 )
+position = Vector2( 140.829, 779.007 )
 
 [node name="bala" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3234.38, 3960.46 )
 
 [node name="generador de enemigo 2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 355.786, 3426.12 )
+position = Vector2( 710.161, 2651.56 )
 
 [node name="generador de enemigo 3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 642.095, 4014 )
+position = Vector2( 404.157, 2920.5 )
 
 [node name="generador de enemigo 4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 378.833, 5867.56 )
+position = Vector2( 1001.52, 5796.69 )
 
 [node name="generador de enemigo 5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 646.47, 2413.22 )
+position = Vector2( 611.032, 1841.16 )
 
 [node name="perro2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 349.119, 527.474 )
+position = Vector2( 536.432, 704.662 )
 
 [node name="gato" parent="." instance=ExtResource( 7 )]
 
