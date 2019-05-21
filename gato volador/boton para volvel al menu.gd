@@ -13,13 +13,6 @@ func _ready():
 #	pass
 
 
-func _on_jugar_pressed():
-	get_tree().change_scene("res://loading.tscn")
-
-
-func _on_salir_pressed():
-	get_tree().quit()
-
-func _on_creditos_pressed():
-	get_tree().change_scene("res://creditos.tscn")
+func _on_menu_pressed():
+	get_tree().change_scene("res://Interfaz.tscn")
 	pass # Replace with function body.
