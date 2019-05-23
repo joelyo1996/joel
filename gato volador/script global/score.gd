@@ -1,8 +1,5 @@
 extends Node
-
-const vida_maxima = 100
-
-var vida_jugador = vida_maxima
+var score = 0
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
