@@ -19,6 +19,11 @@ config/name="Nuevo proyecto de juego"
 run/main_scene="res://Interfaz.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+vida_global="*res://script global/vida_global.gd"
+score="*res://script global/score.gd"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

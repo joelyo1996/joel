@@ -1,4 +1,4 @@
-extends Control
+extends CanvasLayer
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -13,13 +13,10 @@ func _ready():
 #	pass
 
 
-func _on_jugar_pressed():
-	get_tree().change_scene("res://loading.tscn")
-
-
-func _on_salir_pressed():
-	get_tree().quit()
-
-func _on_creditos_pressed():
-	get_tree().change_scene("res://creditos.tscn")
+func _on_Button_pressed():
+	if get_tree().paused == true:
+		get_tree().paused = false
+	else:
+		get_tree().paused = true
+	
 	pass # Replace with function body.

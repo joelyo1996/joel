@@ -1,5 +1,8 @@
-extends Control
+extends Node
 
+const vida_maxima = 100
+
+var vida_jugador = vida_maxima
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -11,15 +14,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_jugar_pressed():
-	get_tree().change_scene("res://loading.tscn")
-
-
-func _on_salir_pressed():
-	get_tree().quit()
-
-func _on_creditos_pressed():
-	get_tree().change_scene("res://creditos.tscn")
-	pass # Replace with function body.
