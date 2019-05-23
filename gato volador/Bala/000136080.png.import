@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fondo-cielo-nubes-ciudad-estilo-plano_23-2147797169.jpg-1bae81ddff256fb1bc36e38a14b24164.stex"
+path="res://.import/000136080.png-14adb851355a6a302e874cdba0bc9334.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fondo/fondo-cielo-nubes-ciudad-estilo-plano_23-2147797169.jpg"
-dest_files=[ "res://.import/fondo-cielo-nubes-ciudad-estilo-plano_23-2147797169.jpg-1bae81ddff256fb1bc36e38a14b24164.stex" ]
+source_file="res://Bala/000136080.png"
+dest_files=[ "res://.import/000136080.png-14adb851355a6a302e874cdba0bc9334.stex" ]
 
 [params]
 

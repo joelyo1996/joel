@@ -78,5 +78,5 @@ custom_fonts/font = SubResource( 3 )
 text = "Salir"
 
 [connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
-[connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
+[connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
