@@ -19,6 +19,7 @@ value = 100.0
 script = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="."]
+pause_mode = 2
 margin_left = 873.001
 margin_top = 11.25
 margin_right = 997.001
