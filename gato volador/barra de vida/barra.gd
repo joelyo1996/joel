@@ -1,8 +1,5 @@
-extends Node
+extends CanvasLayer
 
-const vida_maxima = 100
-
-var vida_jugador = vida_maxima
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -14,3 +11,12 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_Button_pressed():
+	if get_tree().paused == true:
+		get_tree().paused = false
+	else:
+		get_tree().paused = true
+	
+	pass # Replace with function body.

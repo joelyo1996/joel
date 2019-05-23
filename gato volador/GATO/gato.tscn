@@ -31,7 +31,7 @@ script = ExtResource( 1 )
 [node name="helicoptero" type="AnimatedSprite" parent="."]
 position = Vector2( 9.50573, 0 )
 frames = SubResource( 1 )
-frame = 5
+frame = 4
 playing = true
 
 [node name="cañon1" type="Node2D" parent="."]
@@ -60,6 +60,6 @@ margin_right = 293.0
 margin_bottom = 42.0
 value = 100.0
 
-[connection signal="timeout" from="Timer" to="cañon2" method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer" to="cañon1" method="_on_Timer_timeout"]
+[connection signal="timeout" from="Timer" to="cañon2" method="_on_Timer_timeout"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
