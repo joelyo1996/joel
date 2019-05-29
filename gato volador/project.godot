@@ -23,6 +23,7 @@ config/icon="res://icon.png"
 
 vida_global="*res://script global/vida_global.gd"
 score="*res://script global/score.gd"
+vida_global_enemigo="*res://script global/vida_global_enemigo.gd"
 
 [rendering]
 

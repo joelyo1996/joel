@@ -18,9 +18,6 @@ func _physics_process(delta):
 		movimiento.x-=650
 	if Input.is_action_pressed("ui_right"):
 		movimiento.x+=650
-	if Input.is_action_pressed("ui_down"):
-		vida_global.vida_jugador -= 5
-		$CanvasLayer/ProgressBar.value = vida_global.vida_jugador
 	movimiento = move_and_slide(movimiento)
 
 	pass
@@ -30,5 +27,6 @@ func _physics_process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	queue_free()
+	vida_global.vida_jugador -= 5
+	$CanvasLayer/ProgressBar.value = vida_global.vida_jugador
 	pass # Replace with function body.

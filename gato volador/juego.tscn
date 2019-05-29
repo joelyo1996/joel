@@ -9,7 +9,6 @@
 [ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=7]
 [ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=8]
 
-
 [sub_resource type="Curve2D" id=1]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -2.00027, 601.341, 0, 0, 0, 0, 1022.5, 599.841 )

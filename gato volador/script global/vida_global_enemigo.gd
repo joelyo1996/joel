@@ -1,26 +1,16 @@
-extends Node2D
+extends Node
 
-var vida_perro=30
+const vida_maxima_enemigo = 20
+
+var vida_enemigo = vida_maxima_enemigo
+# Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
 	pass # Replace with function body.
-	
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	rotation_degrees += 15
-	position.y -= 6
-	pass
-
-
-
-func _on_Area2D_area_entered(area):
-	queue_free()
-		
-	pass # Replace with function body.
-
+#func _process(delta):
+#	pass
