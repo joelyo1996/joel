@@ -5,6 +5,8 @@ var vida_perro=30
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$ProgressBar.max_value = vida_global_enemigo.vida_maxima_enemigo
+	$ProgressBar.value = vida_global_enemigo.vida_enemigo
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,8 +18,11 @@ func _process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	vida_global.puntos += 1
-	queue_free()
+	$ProgressBar.value = vida_global_enemigo.vida_enemigo
+	vida_global_enemigo.vida_enemigo -= 5
+	if ($ProgressBar.value == 0):
+		vida_global.puntos += 1
+		queue_free()
 	pass # Replace with function body.
 	
 

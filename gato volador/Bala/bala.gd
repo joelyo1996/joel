@@ -20,7 +20,6 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 
 func _on_proyectil_area_entered(area):
-	score_global.score += 1
 	queue_free()
 	pass 
 
