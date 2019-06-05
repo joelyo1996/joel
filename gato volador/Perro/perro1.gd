@@ -1,6 +1,5 @@
 extends Node2D
 var vida_perro=30
-var score 
 # var a = 2
 # var b = "text"
 
@@ -17,6 +16,7 @@ func _process(delta):
 
 
 func _on_Area2D_area_entered(area):
+	vida_global.puntos += 1
 	queue_free()
 	pass # Replace with function body.
 	

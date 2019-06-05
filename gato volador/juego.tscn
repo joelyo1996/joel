@@ -63,16 +63,6 @@ autostart = true
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 8 )]
 
-[node name="yo" type="Label" parent="."]
-margin_left = 393.5
-margin_top = 79.5002
-margin_right = 608.5
-margin_bottom = 153.5
-
-[node name="perro1" parent="." instance=ExtResource( 2 )]
-visible = false
-position = Vector2( -195.75, 252 )
-
 [connection signal="golpe" from="gato" to="." method="game_over"]
 [connection signal="timeout" from="perrotimer" to="." method="_on_perrotimer_timeout"]
 [connection signal="timeout" from="scoretime" to="." method="_on_scoretime_timeout"]

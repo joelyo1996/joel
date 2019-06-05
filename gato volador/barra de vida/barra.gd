@@ -9,8 +9,9 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	$puntos.text = "Puntos: "+str(vida_global.puntos)
+	pass
 
 
 func _on_Button_pressed():
@@ -22,5 +23,4 @@ func _on_Button_pressed():
 	pass # Replace with function body.
 
 func update_score(puntos):
-	$scorelabel.text = str(puntos)
 	pass

@@ -1,6 +1,5 @@
 extends Node2D
 export (PackedScene) var perro1
-var score
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -31,7 +30,6 @@ func _on_iniciotimer_timeout():
 
 
 func _on_scoretime_timeout():
-	#score += 1
 	pass # Replace with function body.
 
 
@@ -43,13 +41,6 @@ func _on_perrotimer_timeout():
 	
 	p1.position = $camino/PathFollow2D.position
 	
-func monedas():
-	if $bala._on_proyectil_area_entered:
-		$perro1/Area2D
-		score += 1
-	$CanvasLayer.update_score(score)
-#score += 1
-#$interfaz.update_score(score)
 
 
 
