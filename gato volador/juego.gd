@@ -42,5 +42,8 @@ func _on_perrotimer_timeout():
 	p1.position = $camino/PathFollow2D.position
 	
 
-
+func cambio():
+	if vida_global.puntos == 20:
+		get_tree().change_scene("res://fondo2.tscn")
+	pass
 
