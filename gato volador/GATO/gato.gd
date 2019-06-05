@@ -27,6 +27,8 @@ func _physics_process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	vida_global.vida_jugador -= 5
 	$CanvasLayer/ProgressBar.value = vida_global.vida_jugador
+	vida_global.vida_jugador -= 25
+	if ($CanvasLayer/ProgressBar.value == 0):
+		queue_free()
 	pass # Replace with function body.

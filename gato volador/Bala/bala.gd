@@ -1,14 +1,9 @@
 extends RigidBody2D
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta):
 	rotation_degrees -= 30
 	
@@ -19,12 +14,13 @@ func _process(delta):
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 	
-	pass # Replace with function body.
+	pass 
 
 
 
 
 func _on_proyectil_area_entered(area):
+	score_global.score += 1
 	queue_free()
-	pass # Replace with function body.
+	pass 
 

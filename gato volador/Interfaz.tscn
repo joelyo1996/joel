@@ -98,4 +98,3 @@ text = "creditos"
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
 [connection signal="pressed" from="Control/creditos" to="Control" method="_on_creditos_pressed"]
-[connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]

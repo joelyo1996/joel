@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://barra de vida/barra.gd" type="Script" id=1]
+[ext_resource path="res://fount.tres" type="DynamicFont" id=2]
 
 [node name="Node2D" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -12,5 +13,15 @@ margin_top = 11.25
 margin_right = 997.001
 margin_bottom = 33.25
 text = "pause"
+
+[node name="scorelabel" type="Label" parent="."]
+margin_left = 410.0
+margin_top = 41.0
+margin_right = 531.0
+margin_bottom = 132.0
+custom_fonts/font = ExtResource( 2 )
+text = "0"
+align = 1
+valign = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

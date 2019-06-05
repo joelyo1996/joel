@@ -20,3 +20,7 @@ func _on_Button_pressed():
 		get_tree().paused = true
 	
 	pass # Replace with function body.
+
+func update_score(puntos):
+	$scorelabel.text = str(puntos)
+	pass
