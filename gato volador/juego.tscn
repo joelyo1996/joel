@@ -29,21 +29,22 @@ scale = Vector2( 0.812045, 0.94987 )
 position = Vector2( 3234.38, 3960.46 )
 
 [node name="generador de enemigo 2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 710.161, 2651.56 )
+position = Vector2( -103.045, 2660.89 )
 
 [node name="generador de enemigo 3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 404.157, 2920.5 )
+position = Vector2( -424.696, 2903.23 )
 
 [node name="generador de enemigo 4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1001.52, 5796.69 )
+position = Vector2( 757.805, 5805.5 )
 
 [node name="generador de enemigo 5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 611.032, 1841.16 )
+position = Vector2( 1418.57, 1817.28 )
 
 [node name="perro2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 536.432, 704.662 )
+position = Vector2( 72.4686, 702.719 )
 
 [node name="gato" parent="." instance=ExtResource( 7 )]
+position = Vector2( 470.337, 77.9981 )
 
 [node name="camino" type="Path2D" parent="."]
 curve = SubResource( 1 )
