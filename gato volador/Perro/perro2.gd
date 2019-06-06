@@ -12,6 +12,7 @@ func _ready():
 func _process(delta):
 	rotation_degrees += 15
 	position.y -= 6
+	position.x += 1
 #	pass
 
 
