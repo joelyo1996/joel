@@ -63,9 +63,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -39.0
+margin_left = -37.7076
 margin_top = -214.0
-margin_right = 137.0
+margin_right = 138.292
 margin_bottom = -156.0
 custom_fonts/font = SubResource( 3 )
 text = "Jugar"
@@ -95,6 +95,6 @@ custom_fonts/font = SubResource( 3 )
 text = "creditos"
 
 [connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
-[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
+[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/creditos" to="Control" method="_on_creditos_pressed"]

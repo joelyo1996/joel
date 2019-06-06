@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Layer 1_perro4.png-1c26505d8772612e3ffbbaace6edce26.stex"
+path="res://.import/Layer 1_perro4.png-026e60a3b61c1d92fbfb21156031193a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Perro/imagenes del perro1/Layer 1_perro4.png"
-dest_files=[ "res://.import/Layer 1_perro4.png-1c26505d8772612e3ffbbaace6edce26.stex" ]
+source_file="res://perro/imagenes del perro1/Layer 1_perro4.png"
+dest_files=[ "res://.import/Layer 1_perro4.png-026e60a3b61c1d92fbfb21156031193a.stex" ]
 
 [params]
 
