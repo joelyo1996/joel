@@ -24,7 +24,7 @@ func _process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	queue_free()
-		
+	if $Area2D.collision_layer:
+		queue_free()
 	pass # Replace with function body.
 

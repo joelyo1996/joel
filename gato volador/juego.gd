@@ -43,5 +43,3 @@ func _on_perrotimer_timeout():
 	
 	p1.position = $camino/PathFollow2D.position
 	
-
-

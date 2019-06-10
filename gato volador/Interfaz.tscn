@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://.import/GLADES-DEMO.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fuente/CFNightofTerrorPERSONAL-Reg.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://fount.tres" type="DynamicFont" id=2]
 [ext_resource path="res://interfaz.gd" type="Script" id=3]
 
@@ -97,5 +97,4 @@ text = "creditos"
 [connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
-
 [connection signal="pressed" from="Control/creditos" to="Control" method="_on_creditos_pressed"]

@@ -32,6 +32,7 @@ self_modulate = Color( 1, 1, 100, 1 )
 position = Vector2( 3.375, -4.5 )
 scale = Vector2( 0.307888, 0.404295 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]

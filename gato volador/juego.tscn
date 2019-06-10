@@ -55,7 +55,7 @@ rotation = -0.00149261
 rotate = false
 
 [node name="perrotimer" type="Timer" parent="."]
-wait_time = 0.3
+wait_time = 0.44
 
 [node name="scoretime" type="Timer" parent="."]
 
