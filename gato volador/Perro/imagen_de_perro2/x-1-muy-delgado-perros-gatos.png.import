@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fondo-cielo-nubes-ciudad-estilo-plano_23-2147797169.jpg-7fa574db85d570a20d608fdbb6f5f54a.stex"
+path="res://.import/x-1-muy-delgado-perros-gatos.png-cccce397f2b3ad6c86f892542a464562.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fondo/fondo-cielo-nubes-ciudad-estilo-plano_23-2147797169.jpg"
-dest_files=[ "res://.import/fondo-cielo-nubes-ciudad-estilo-plano_23-2147797169.jpg-7fa574db85d570a20d608fdbb6f5f54a.stex" ]
+source_file="res://Perro/imagen_de_perro2/x-1-muy-delgado-perros-gatos.png"
+dest_files=[ "res://.import/x-1-muy-delgado-perros-gatos.png-cccce397f2b3ad6c86f892542a464562.stex" ]
 
 [params]
 
