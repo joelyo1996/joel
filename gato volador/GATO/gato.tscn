@@ -9,8 +9,10 @@
 [ext_resource path="res://GATO/SPRITE VOLANDO/6.png" type="Texture" id=7]
 [ext_resource path="res://GATO/SPRITE VOLANDO/7.png" type="Texture" id=8]
 [ext_resource path="res://GATO/SPRITE VOLANDO/8.png" type="Texture" id=9]
-[ext_resource path="res://Bala/cañon1.gd" type="Script" id=10]
-[ext_resource path="res://Bala/cañon2.gd" type="Script" id=11]
+[ext_resource path="res://Bala/canon1.gd" type="Script" id=10]
+[ext_resource path="res://Bala/canon2.gd" type="Script" id=11]
+
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

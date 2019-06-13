@@ -2,9 +2,10 @@
 
 [ext_resource path="res://fondo2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=2]
-[ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=3]
+[ext_resource path="res://barra_de_vida/barra.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Perro/generador_enemigo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Perro/generador de enemigo 2.tscn" type="PackedScene" id=5]
+
 
 [node name="escenario2" type="Node2D"]
 
