@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://juego.gd" type="Script" id=1]
 [ext_resource path="res://Perro/perro1.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Perro/perro2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=7]
 [ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Sonido/474472__kendallbear__half-mast-beat-102bpm.wav" type="AudioStream" id=9]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -63,6 +64,10 @@ wait_time = 0.3
 autostart = true
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 8 )]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
 
 [connection signal="golpe" from="gato" to="." method="game_over"]
 [connection signal="timeout" from="perrotimer" to="." method="_on_perrotimer_timeout"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/474472__kendallbear__half-mast-beat-102bpm.wav-59ce8767b50a42b14b0d3e6a8de535fb.sample"
+
+[deps]
+
+source_file="res://Sonido/474472__kendallbear__half-mast-beat-102bpm.wav"
+dest_files=[ "res://.import/474472__kendallbear__half-mast-beat-102bpm.wav-59ce8767b50a42b14b0d3e6a8de535fb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
