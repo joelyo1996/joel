@@ -8,7 +8,7 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 34.8421
-height = 105.724
+height = 30.5053
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -29,8 +29,8 @@ shape = SubResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="Area2D"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 self_modulate = Color( 1, 1, 100, 1 )
-position = Vector2( 3.375, -4.5 )
-scale = Vector2( 0.307888, 0.404295 )
+position = Vector2( 1.87499, -1.50001 )
+scale = Vector2( 0.200745, 0.276454 )
 frames = SubResource( 2 )
 frame = 2
 playing = true
@@ -39,9 +39,9 @@ playing = true
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 margin_left = -38.0
-margin_top = -124.0
+margin_top = -82.0
 margin_right = 38.0
-margin_bottom = -101.0
+margin_bottom = -59.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
