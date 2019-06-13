@@ -12,8 +12,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	$puntos.text = "Puntos: "+str(vida_global.puntos)
-	if vida_global.puntos == 5:
-		get_tree().change_scene("res://escenario2.tscn")
 	pass
 
 
