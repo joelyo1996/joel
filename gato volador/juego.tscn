@@ -28,16 +28,16 @@ scale = Vector2( 0.812045, 0.94987 )
 [node name="bala" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3234.38, 3960.46 )
 
-[node name="generador de enemigo 2" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo2" parent="." instance=ExtResource( 5 )]
 position = Vector2( -103.045, 2660.89 )
 
-[node name="generador de enemigo 3" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo3" parent="." instance=ExtResource( 5 )]
 position = Vector2( -424.696, 2903.23 )
 
-[node name="generador de enemigo 4" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo4" parent="." instance=ExtResource( 5 )]
 position = Vector2( 757.805, 5805.5 )
 
-[node name="generador de enemigo 5" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo5" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1418.57, 1817.28 )
 
 [node name="perro2" parent="." instance=ExtResource( 6 )]
