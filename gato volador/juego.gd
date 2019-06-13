@@ -42,6 +42,9 @@ func _on_perrotimer_timeout():
 	add_child(p1)
 	
 	p1.position = $camino/PathFollow2D.position
-	
+
+func _process(delta):
+	if (vida_global.puntos == 10):
+		get_tree().change_scene("res://escenario2.tscn")
 
 
