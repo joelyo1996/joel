@@ -9,8 +9,8 @@
 [ext_resource path="res://GATO/SPRITE VOLANDO/6.png" type="Texture" id=7]
 [ext_resource path="res://GATO/SPRITE VOLANDO/7.png" type="Texture" id=8]
 [ext_resource path="res://GATO/SPRITE VOLANDO/8.png" type="Texture" id=9]
-[ext_resource path="res://Bala/cañon1.gd" type="Script" id=10]
-[ext_resource path="res://Bala/cañon2.gd" type="Script" id=11]
+[ext_resource path="res://Bala/canon1.gd" type="Script" id=10]
+[ext_resource path="res://Bala/canon2.gd" type="Script" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -21,7 +21,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 652.899, 358.577 )
+extents = Vector2( 449.673, 298.775 )
 
 [node name="gato" type="KinematicBody2D"]
 position = Vector2( 91.2053, 77.9981 )
@@ -29,26 +29,30 @@ scale = Vector2( 0.05, 0.05 )
 script = ExtResource( 1 )
 
 [node name="helicoptero" type="AnimatedSprite" parent="."]
-position = Vector2( 9.50573, 0 )
+position = Vector2( 287.193, 55.5157 )
+scale = Vector2( 0.613492, 0.653691 )
 frames = SubResource( 1 )
-frame = 4
+
+frame = 5
 playing = true
 
 [node name="canon1" type="Node2D" parent="."]
-position = Vector2( -482.682, 585.613 )
+position = Vector2( -35.6724, 488.46 )
 script = ExtResource( 10 )
 
 [node name="canon2" type="Node2D" parent="."]
-position = Vector2( 503.892, 606.018 )
+position = Vector2( 585.166, 494.986 )
 script = ExtResource( 11 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.99
+wait_time = 0.76
+
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 474.101, 13.879 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -0.000488281, -6.80145 )
+position = Vector2( -189.641, 34.8352 )
 shape = SubResource( 2 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -60,11 +64,6 @@ margin_right = 293.0
 margin_bottom = 42.0
 value = 100.0
 
-[node name="Label" type="Label" parent="."]
-margin_left = 2438.0
-margin_top = 1124.0
-margin_right = 4693.0
-margin_bottom = 2179.0
 
 [connection signal="timeout" from="Timer" to="canon1" method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer" to="canon2" method="_on_Timer_timeout"]

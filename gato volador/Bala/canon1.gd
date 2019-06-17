@@ -1,5 +1,5 @@
 extends Node2D
-var bala = preload("res://bala/bala.tscn")
+var bala = preload("res://Bala/bala.tscn")
 
 func _ready():
 	var bli = bala.instance()

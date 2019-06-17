@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2d-game-background-11395_imgs_11395_2.jpg-41b627b0d5daebd80480c9ceab83615f.stex"
+path="res://.import/derecha.png-ab75f6f9555c39e1f48e8336918cbb6b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenes/2d-game-background-11395_imgs_11395_2.jpg"
-dest_files=[ "res://.import/2d-game-background-11395_imgs_11395_2.jpg-41b627b0d5daebd80480c9ceab83615f.stex" ]
+source_file="res://derecha.png"
+dest_files=[ "res://.import/derecha.png-ab75f6f9555c39e1f48e8336918cbb6b.stex" ]
 
 [params]
 

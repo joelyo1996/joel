@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sebastian-barrios-fondo-vector.jpg-ef1795fff271bee1049e9148610ced4d.stex"
+path="res://.import/Night of Terror_banner.jpg-db13d4776c3deb44bf42dcae7d368caa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sebastian-barrios-fondo-vector.jpg"
-dest_files=[ "res://.import/sebastian-barrios-fondo-vector.jpg-ef1795fff271bee1049e9148610ced4d.stex" ]
+source_file="res://Fuente/Night of Terror_banner.jpg"
+dest_files=[ "res://.import/Night of Terror_banner.jpg-db13d4776c3deb44bf42dcae7d368caa.stex" ]
 
 [params]
 

@@ -2,6 +2,7 @@ extends KinematicBody2D
 var movimiento = Vector2()
 var limite
 signal golpe
+signal cambio
 
 func _ready():
 	$CanvasLayer/ProgressBar.max_value = vida_global.vida_maxima
