@@ -1,6 +1,6 @@
 extends Node2D
 
-var vida_perro=30
+var vida_perro=60
 # var a = 2
 # var b = "text"
 
@@ -13,7 +13,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	rotation_degrees += 15
+	
 	position.y -= 6
 
 
