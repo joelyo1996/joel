@@ -1,6 +1,6 @@
 extends Node2D
 
-var vida_perro=30
+var vida_perro=60
 # var a = 2
 # var b = "text"
 
