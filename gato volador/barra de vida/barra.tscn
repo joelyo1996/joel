@@ -2,8 +2,8 @@
 
 [ext_resource path="res://barra de vida/barra.gd" type="Script" id=1]
 [ext_resource path="res://Fuente/CFNightofTerrorPERSONAL-Reg.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://izquierda.jpg" type="Texture" id=3]
-[ext_resource path="res://derecha.jpg" type="Texture" id=4]
+[ext_resource path="res://izquierda.png" type="Texture" id=3]
+[ext_resource path="res://derecha.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
@@ -33,13 +33,13 @@ align = 1
 valign = 1
 
 [node name="izquierda" type="TouchScreenButton" parent="."]
-position = Vector2( 18.0001, 501.751 )
+position = Vector2( 15.6085, 633.292 )
 scale = Vector2( 0.0723066, 0.0601913 )
 normal = ExtResource( 3 )
 action = "ui_left"
 
 [node name="derecha" type="TouchScreenButton" parent="."]
-position = Vector2( 909.001, 510.75 )
+position = Vector2( 909.001, 630.333 )
 scale = Vector2( 0.0792297, 0.0567298 )
 normal = ExtResource( 4 )
 action = "ui_right"

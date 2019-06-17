@@ -22,8 +22,8 @@ __meta__ = {
 perro1 = ExtResource( 2 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 511.956, 306.832 )
-scale = Vector2( 0.812045, 0.94987 )
+position = Vector2( 511.956, 360.146 )
+scale = Vector2( 0.812045, 1.11648 )
 
 [node name="bala" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3234.38, 3960.46 )

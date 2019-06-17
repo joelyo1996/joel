@@ -15,7 +15,7 @@ script = ExtResource( 1 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 margin_right = 1023.0
-margin_bottom = 600.0
+margin_bottom = 727.0
 texture = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
