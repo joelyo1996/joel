@@ -16,10 +16,10 @@ script = ExtResource( 1 )
 
 [node name="Button" type="Button" parent="."]
 pause_mode = 2
-margin_left = 873.001
+margin_left = 815.601
 margin_top = 11.25
-margin_right = 997.001
-margin_bottom = 33.25
+margin_right = 1015.6
+margin_bottom = 61.25
 custom_fonts/font = SubResource( 1 )
 text = "pause"
 
