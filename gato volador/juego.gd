@@ -6,6 +6,7 @@ export (PackedScene) var perro1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$audiofondo.play()
 	vida_global.puntos = 0
 	vida_global.vida_jugador = 100
 	randomize()
@@ -44,6 +45,6 @@ func _on_perrotimer_timeout():
 	p1.position = $camino/PathFollow2D.position
 	
 func _process(delta):
-	if (vida_global.puntos == 100):
-		get_tree().change_scene("res://escenario2.tscn")
+	if (vida_global.puntos == 50):
+		get_tree().change_scene("res://pasaste_de_nivel.tscn")
 	

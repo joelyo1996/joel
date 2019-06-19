@@ -26,7 +26,9 @@ shape = SubResource( 1 )
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 visible = false
-margin_right = 4.0
-margin_bottom = 14.0
+margin_left = -27.0
+margin_top = -73.5001
+margin_right = 43.0
+margin_bottom = -56.5001
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
