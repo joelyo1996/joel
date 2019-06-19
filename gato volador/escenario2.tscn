@@ -1,25 +1,75 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://fondo2.tscn" type="PackedScene" id=1]
-[ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=2]
-[ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Perro/generador_enemigo.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Perro/generador de enemigo 2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://escenario2.gd" type="Script" id=1]
+[ext_resource path="res://Perro/perro2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Perro/perro1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://fondo2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=5]
+[ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Perro/generador_enemigo.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Perro/generador de enemigo 2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://script global/el gato volador.ogg" type="AudioStream" id=9]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 0.652985, 718.738, 0, 0, 0, 0, 1026.49, 719.738 )
+}
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -1.50021, 717.697, 0, 0, 0, 0, 1027.99, 720.697 )
+}
 
 [node name="escenario2" type="Node2D"]
+script = ExtResource( 1 )
+perro2 = ExtResource( 2 )
+perro3 = ExtResource( 3 )
 
-[node name="fondo2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 508.781, 309.375 )
-scale = Vector2( 1.66943, 0.998203 )
+[node name="fondo2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 515.531, 369 )
+scale = Vector2( 1.691, 1.1887 )
 
-[node name="gato" parent="." instance=ExtResource( 2 )]
+[node name="gato" parent="." instance=ExtResource( 5 )]
 position = Vector2( 293.705, 83.0606 )
 
-[node name="Node2D" parent="." instance=ExtResource( 3 )]
+[node name="Node2D" parent="." instance=ExtResource( 6 )]
 
-[node name="generador_enemigo" parent="." instance=ExtResource( 4 )]
-position = Vector2( 201.75, 677.25 )
+[node name="generador_enemigo" parent="." instance=ExtResource( 7 )]
+position = Vector2( 152.25, 818.25 )
 
-[node name="generador_de_enemigo2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 666, 706.5 )
+[node name="generador_de_enemigo2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 688.5, 834.75 )
 
+[node name="caminorojo" type="Path2D" parent="."]
+curve = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PathFollow2D" type="PathFollow2D" parent="caminorojo"]
+position = Vector2( 0.652985, 718.738 )
+rotation = 0.000993779
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="timerperrorojo" type="Timer" parent="."]
+wait_time = 0.22
+autostart = true
+
+[node name="timerperroverde" type="Timer" parent="."]
+wait_time = 0.22
+autostart = true
+
+[node name="caminoperroverde" type="Path2D" parent="."]
+curve = SubResource( 2 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="caminoperroverde"]
+position = Vector2( -1.50021, 717.697 )
+rotation = 0.00289247
+
+[node name="audiogato" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[connection signal="timeout" from="timerperrorojo" to="." method="_on_timerperrorojo_timeout"]
+[connection signal="timeout" from="timerperroverde" to="." method="_on_timerperroverde_timeout"]

@@ -39,9 +39,9 @@ script = ExtResource( 2 )
 
 [node name="menu" type="Button" parent="boton para volvel al menu"]
 margin_left = -9.0
-margin_top = 63.0001
+margin_top = 162.0
 margin_right = 330.0
-margin_bottom = 126.0
+margin_bottom = 225.0
 custom_fonts/font = ExtResource( 3 )
 text = "Atras"
 

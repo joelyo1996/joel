@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://juego.gd" type="Script" id=1]
 [ext_resource path="res://Perro/perro1.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Perro/perro2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=7]
 [ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=8]
+[ext_resource path="res://script global/el gato volador.ogg" type="AudioStream" id=9]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -29,16 +30,16 @@ scale = Vector2( 0.812045, 1.11648 )
 position = Vector2( 3234.38, 3960.46 )
 
 [node name="generador_de_enemigo2" parent="." instance=ExtResource( 5 )]
-position = Vector2( -103.045, 2660.89 )
+position = Vector2( -8.54541, 450.269 )
 
 [node name="generador_de_enemigo3" parent="." instance=ExtResource( 5 )]
-position = Vector2( -424.696, 2903.23 )
+position = Vector2( 257.053, 797.235 )
 
 [node name="generador_de_enemigo4" parent="." instance=ExtResource( 5 )]
 position = Vector2( 757.805, 5805.5 )
 
 [node name="generador_de_enemigo5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1418.57, 1817.28 )
+position = Vector2( -9.052, 268.158 )
 
 [node name="perro2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 72.4686, 702.719 )
@@ -55,7 +56,8 @@ rotation = -0.00149261
 rotate = false
 
 [node name="perrotimer" type="Timer" parent="."]
-wait_time = 0.44
+wait_time = 0.25
+autostart = true
 
 [node name="scoretime" type="Timer" parent="."]
 
@@ -63,6 +65,9 @@ wait_time = 0.44
 autostart = true
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 8 )]
+
+[node name="audiofondo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
 
 [connection signal="golpe" from="gato" to="." method="game_over"]
 [connection signal="timeout" from="perrotimer" to="." method="_on_perrotimer_timeout"]

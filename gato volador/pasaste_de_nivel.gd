@@ -1,31 +1,19 @@
 extends Node2D
 
-var vida_perro_rojo = 20
-
+# Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-	
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	
-	position.y -= 6
+#func _process(delta):
+#	pass
 
 
-	position.x += 1
-	pass
-
-
-
-
-func _on_Area2D_area_entered(area):
-	if $Area2D.collision_layer:
-		vida_global.puntos += 1
-		queue_free()
+func _on_Timer_escenario2_timeout():
+	$Timer_escenario2.start()
+	get_tree().change_scene("res://escenario2.tscn")
 	pass # Replace with function body.
-

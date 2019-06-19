@@ -1,10 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Perro/perro2.gd" type="Script" id=1]
-
 [ext_resource path="res://Perro/imagenes del perro2/perrorojo.png" type="Texture" id=2]
-
-
 
 [sub_resource type="CapsuleShape2D" id=1]
 height = 77.9719
@@ -19,10 +16,8 @@ collision_mask = 2
 [node name="Sprite" type="Sprite" parent="Area2D"]
 modulate = Color( 1, 0, 0, 1 )
 self_modulate = Color( 1, 0, 1, 1 )
-
 position = Vector2( -0.749986, 0.750004 )
 scale = Vector2( 0.404759, 0.408467 )
-
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -31,7 +26,9 @@ shape = SubResource( 1 )
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 visible = false
-margin_right = 4.0
-margin_bottom = 14.0
+margin_left = -27.0
+margin_top = -73.5001
+margin_right = 43.0
+margin_bottom = -56.5001
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
