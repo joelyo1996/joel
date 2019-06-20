@@ -33,12 +33,13 @@ self_modulate = Color( 1, 1, 100, 1 )
 position = Vector2( 1.87499, -1.50001 )
 scale = Vector2( 0.200745, 0.276454 )
 frames = SubResource( 2 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
+visible = false
 margin_left = -38.0
 margin_top = -82.0
 margin_right = 38.0
