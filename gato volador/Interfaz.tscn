@@ -53,10 +53,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -239.663
-margin_top = -378.144
-margin_right = 166.337
-margin_bottom = -119.144
+margin_left = -273.779
+margin_top = -380.768
+margin_right = 132.221
+margin_bottom = -121.768
 script = ExtResource( 3 )
 
 [node name="jugar" type="Button" parent="Control"]
@@ -96,6 +96,6 @@ custom_fonts/font = SubResource( 3 )
 text = "creditos"
 
 [connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
-[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
+[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/creditos" to="Control" method="_on_creditos_pressed"]
