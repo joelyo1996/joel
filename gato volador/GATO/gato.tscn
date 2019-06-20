@@ -32,7 +32,7 @@ script = ExtResource( 1 )
 position = Vector2( 287.193, 55.5157 )
 scale = Vector2( 0.613492, 0.653691 )
 frames = SubResource( 1 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="canon1" type="Node2D" parent="."]
@@ -49,6 +49,7 @@ wait_time = 0.76
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 474.101, 13.879 )
 collision_layer = 3
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( -189.641, 34.8352 )
