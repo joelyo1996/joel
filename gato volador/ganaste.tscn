@@ -52,7 +52,7 @@ custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.917647, 0.0980392, 0.0980392, 1 )
 text = "Felicidades ganaste
 
-lograste la venganza del gato haora su esposa esta en paz"
+lograste la venganza del gato "
 align = 1
 valign = 1
 
@@ -68,7 +68,7 @@ text = "volver al menu"
 position = Vector2( 534.374, 122.625 )
 scale = Vector2( 0.215413, 0.168668 )
 frames = SubResource( 4 )
-frame = 3
+frame = 6
 playing = true
 
 [connection signal="pressed" from="volver_al_menu" to="." method="_on_volver_al_menu_pressed"]
