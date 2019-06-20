@@ -19,15 +19,15 @@ texture = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
 anchor_bottom = 1.0
-margin_left = 323.75
-margin_top = 112.25
-margin_right = 642.75
-margin_bottom = 245.25
+margin_left = 251.75
+margin_top = 130.25
+margin_right = 760.75
+margin_bottom = 339.25
 custom_fonts/font = SubResource( 2 )
 text = "hecho por 
-gregorio
-joel
-moncho"
+Gregorio Espindola
+joel Bello
+Joel moncho"
 align = 1
 
 [node name="boton para volvel al menu" type="Control" parent="."]

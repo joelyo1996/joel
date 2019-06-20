@@ -53,10 +53,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -241.25
-margin_top = -270.25
-margin_right = 164.75
-margin_bottom = -11.25
+margin_left = -273.779
+margin_top = -380.768
+margin_right = 132.221
+margin_bottom = -121.768
 script = ExtResource( 3 )
 
 [node name="jugar" type="Button" parent="Control"]
@@ -66,8 +66,8 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -37.7076
 margin_top = -214.0
-margin_right = 162.292
-margin_bottom = -156.0
+margin_right = 212.292
+margin_bottom = -114.0
 custom_fonts/font = SubResource( 3 )
 text = "Jugar"
 
@@ -76,10 +76,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -39.0
-margin_top = -160.0
-margin_right = 161.0
-margin_bottom = -102.0
+margin_left = -37.4133
+margin_top = -15.6128
+margin_right = 212.587
+margin_bottom = 84.3872
 custom_fonts/font = SubResource( 3 )
 text = "Salir"
 
@@ -88,10 +88,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -39.0
-margin_top = -100.0
-margin_right = 161.0
-margin_bottom = -42.0
+margin_left = -37.4133
+margin_top = -114.28
+margin_right = 212.587
+margin_bottom = -14.2801
 custom_fonts/font = SubResource( 3 )
 text = "creditos"
 
