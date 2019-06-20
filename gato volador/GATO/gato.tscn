@@ -32,7 +32,6 @@ script = ExtResource( 1 )
 position = Vector2( 287.193, 55.5157 )
 scale = Vector2( 0.613492, 0.653691 )
 frames = SubResource( 1 )
-frame = 6
 playing = true
 
 [node name="canon1" type="Node2D" parent="."]
@@ -62,7 +61,6 @@ margin_left = 14.0
 margin_top = 14.0
 margin_right = 293.0
 margin_bottom = 42.0
-value = 100.0
 
 [connection signal="timeout" from="Timer" to="canon1" method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer" to="canon2" method="_on_Timer_timeout"]
