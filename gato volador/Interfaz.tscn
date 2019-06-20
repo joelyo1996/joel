@@ -37,12 +37,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -264.75
-margin_top = -137.75
-margin_right = 305.25
-margin_bottom = 34.2499
+margin_left = -299.0
+margin_top = -206.0
+margin_right = 305.0
+margin_bottom = 34.0
 custom_fonts/font = ExtResource( 2 )
-text = "Es un gato que mataron a su esposa los perros y quiere venganza incluso si es hasta la muerte de este"
+text = "Es un gato que busca venganza por que los Perros mataron a su esposa.
+No se detendra hasta matarlos"
 align = 1
 valign = 1
 autowrap = true
@@ -95,6 +96,6 @@ custom_fonts/font = SubResource( 3 )
 text = "creditos"
 
 [connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
-[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
+[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/creditos" to="Control" method="_on_creditos_pressed"]
