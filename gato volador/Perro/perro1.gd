@@ -11,7 +11,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position.y -= 14
+	position.y -= 10
 	position.x -= 1
 
 

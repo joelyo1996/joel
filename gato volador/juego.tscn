@@ -30,16 +30,28 @@ scale = Vector2( 0.812045, 1.11648 )
 position = Vector2( 3234.38, 3960.46 )
 
 [node name="generador_de_enemigo2" parent="." instance=ExtResource( 5 )]
-position = Vector2( -8.54541, 450.269 )
+position = Vector2( 256.925, 814.193 )
+
+[node name="generador_de_enemigo6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 356.76, 1695.09 )
+
+[node name="generador_de_enemigo7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4.40179, 1680.41 )
 
 [node name="generador_de_enemigo3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 257.053, 797.235 )
+position = Vector2( 515.491, 1182.26 )
+
+[node name="generador_de_enemigo8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 89.7247, 1196.94 )
 
 [node name="generador_de_enemigo4" parent="." instance=ExtResource( 5 )]
 position = Vector2( 757.805, 5805.5 )
 
 [node name="generador_de_enemigo5" parent="." instance=ExtResource( 5 )]
-position = Vector2( -9.052, 268.158 )
+position = Vector2( 799.667, 1470.69 )
+
+[node name="generador_de_enemigo9" parent="." instance=ExtResource( 5 )]
+position = Vector2( -189.874, 1494.18 )
 
 [node name="perro2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 72.4686, 702.719 )
