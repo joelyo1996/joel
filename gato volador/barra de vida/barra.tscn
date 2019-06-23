@@ -26,21 +26,21 @@ text = "pause"
 [node name="puntos" type="Label" parent="."]
 margin_left = 403.0
 margin_top = 7.0
-margin_right = 524.0
-margin_bottom = 64.0
+margin_right = 553.0
+margin_bottom = 82.0
 custom_fonts/font = SubResource( 2 )
 align = 1
 valign = 1
 
 [node name="izquierda" type="TouchScreenButton" parent="."]
-position = Vector2( 15.6085, 633.292 )
-scale = Vector2( 0.0723066, 0.0601913 )
+position = Vector2( 1.25471, 588.18 )
+scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 3 )
 action = "ui_left"
 
 [node name="derecha" type="TouchScreenButton" parent="."]
-position = Vector2( 909.001, 630.333 )
-scale = Vector2( 0.0792297, 0.0567298 )
+position = Vector2( 896.698, 589.322 )
+scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 4 )
 action = "ui_right"
 
