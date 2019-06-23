@@ -1,11 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://juego.gd" type="Script" id=1]
 [ext_resource path="res://Perro/perro1.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Fondo/fondo1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Bala/bala.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Perro/generador de enemigo 2.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Perro/perro2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Perro/perro2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fondo/fondo1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Bala/bala.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Perro/generador de enemigo 2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=7]
 [ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=8]
 [ext_resource path="res://script global/el gato volador.ogg" type="AudioStream" id=9]
@@ -15,45 +15,51 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -2.00027, 601.341, 0, 0, 0, 0, 1022.5, 599.841 )
 }
 
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -2.00016, 601.499, 0, 0, 0, 0, 1027, 598.499 )
+}
+
 [node name="juego" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 perro1 = ExtResource( 2 )
+perro2 = ExtResource( 3 )
 
-[node name="Node2D2" parent="." instance=ExtResource( 3 )]
+[node name="Node2D2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 511.956, 360.146 )
 scale = Vector2( 0.812045, 1.11648 )
 
-[node name="bala" parent="." instance=ExtResource( 4 )]
+[node name="bala" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3234.38, 3960.46 )
 
-[node name="generador_de_enemigo2" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 256.925, 814.193 )
 
-[node name="generador_de_enemigo6" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo6" parent="." instance=ExtResource( 6 )]
 position = Vector2( 356.76, 1695.09 )
 
-[node name="generador_de_enemigo7" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo7" parent="." instance=ExtResource( 6 )]
 position = Vector2( 4.40179, 1680.41 )
 
-[node name="generador_de_enemigo3" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 515.491, 1182.26 )
 
-[node name="generador_de_enemigo8" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo8" parent="." instance=ExtResource( 6 )]
 position = Vector2( 89.7247, 1196.94 )
 
-[node name="generador_de_enemigo4" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 757.805, 5805.5 )
 
-[node name="generador_de_enemigo5" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo5" parent="." instance=ExtResource( 6 )]
 position = Vector2( 799.667, 1470.69 )
 
-[node name="generador_de_enemigo9" parent="." instance=ExtResource( 5 )]
+[node name="generador_de_enemigo9" parent="." instance=ExtResource( 6 )]
 position = Vector2( -189.874, 1494.18 )
 
-[node name="perro2" parent="." instance=ExtResource( 6 )]
+[node name="perro2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 72.4686, 702.719 )
 
 [node name="gato" parent="." instance=ExtResource( 7 )]
@@ -81,7 +87,19 @@ autostart = true
 [node name="audiofondo" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
 
+[node name="camino2" type="Path2D" parent="."]
+curve = SubResource( 2 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="camino2"]
+position = Vector2( -2.00016, 601.499 )
+rotation = -0.0029095
+
+[node name="perrorojotimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
 [connection signal="golpe" from="gato" to="." method="game_over"]
 [connection signal="timeout" from="perrotimer" to="." method="_on_perrotimer_timeout"]
 [connection signal="timeout" from="scoretime" to="." method="_on_scoretime_timeout"]
 [connection signal="timeout" from="iniciotimer" to="." method="_on_iniciotimer_timeout"]
+[connection signal="timeout" from="perrorojotimer" to="." method="_on_perrorojotimer_timeout"]
