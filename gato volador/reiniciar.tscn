@@ -29,7 +29,7 @@ margin_bottom = 293.177
 custom_fonts/font = ExtResource( 3 )
 text = "Te han matado los perros asesinos "
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="audioreiniciar" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sonido aplausos y gritos del publico -  Sound applause and shouts of the public.ogg-e5412f961e12062148641049c97777be.oggstr"
+
+[deps]
+
+source_file="res://sonido/sonido aplausos y gritos del publico -  Sound applause and shouts of the public.ogg"
+dest_files=[ "res://.import/sonido aplausos y gritos del publico -  Sound applause and shouts of the public.ogg-e5412f961e12062148641049c97777be.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
