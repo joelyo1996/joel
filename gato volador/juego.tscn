@@ -92,7 +92,7 @@ curve = SubResource( 2 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="camino2"]
 position = Vector2( -2.00016, 601.499 )
-rotation = -0.0029095
+rotation = -0.00294077
 
 [node name="perrorojotimer" type="Timer" parent="."]
 wait_time = 0.5

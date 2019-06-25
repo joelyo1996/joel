@@ -13,7 +13,7 @@ font_data = ExtResource( 1 )
 [node name="creditos" type="Node2D"]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
-margin_right = 1021.0
+margin_right = 1028.0
 margin_bottom = 722.0
 texture = SubResource( 1 )
 

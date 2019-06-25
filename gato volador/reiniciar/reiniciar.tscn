@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://fount.tres" type="DynamicFont" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 378.816
+margin_top = 412.721
+margin_right = 685.816
+margin_bottom = 556.721
+custom_fonts/font = ExtResource( 1 )
+text = "Volver al menu"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 245.418
+margin_top = 136.177
+margin_right = 901.418
+margin_bottom = 293.177
+custom_fonts/font = ExtResource( 1 )
+text = "Te han matado los perros asesinos "
+

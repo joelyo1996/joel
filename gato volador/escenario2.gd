@@ -14,6 +14,8 @@ func _ready():
 func _process(delta):
 	if (vida_global.puntos == 100):
 		get_tree().change_scene("res://ganaste.tscn")
+	if (vida_global.vida_jugador == 0):
+		get_tree().change_scene("res://reiniciar.tscn")
 	pass
 
 
