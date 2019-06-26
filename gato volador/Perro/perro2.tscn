@@ -18,7 +18,7 @@ collision_mask = 2
 modulate = Color( 1, 0, 0, 1 )
 self_modulate = Color( 1, 0, 1, 1 )
 position = Vector2( -2.24998, 8.25001 )
-scale = Vector2( 0.345288, 0.364349 )
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -33,6 +33,7 @@ margin_right = 43.0
 margin_bottom = -56.5001
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+scale = Vector2( 0.7, 0.7 )
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
