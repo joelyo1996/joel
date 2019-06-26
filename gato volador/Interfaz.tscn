@@ -14,14 +14,14 @@
 [ext_resource path="res://GATO/SPRITE VOLANDO/8.png" type="Texture" id=12]
 [ext_resource path="res://sonido/sonidodemenu.ogg" type="AudioStream" id=13]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 35
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 2 )
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
 "loop": true,
@@ -43,7 +43,7 @@ margin_left = 341.5
 margin_top = 13.5
 margin_right = 732.5
 margin_bottom = 103.5
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "El Gato Volador"
 align = 1
 valign = 1
@@ -84,7 +84,7 @@ margin_left = -37.7076
 margin_top = -214.0
 margin_right = 212.292
 margin_bottom = -114.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Jugar"
 
 [node name="salir" type="Button" parent="Control"]
@@ -96,7 +96,7 @@ margin_left = -37.4133
 margin_top = -15.6128
 margin_right = 212.587
 margin_bottom = 84.3872
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Salir"
 
 [node name="creditos" type="Button" parent="Control"]
@@ -108,13 +108,13 @@ margin_left = -37.4133
 margin_top = -114.28
 margin_right = 212.587
 margin_bottom = -14.2801
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "creditos"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 527.483, 132.527 )
 scale = Vector2( 0.111885, 0.116001 )
-frames = SubResource( 4 )
+frames = SubResource( 3 )
 frame = 5
 playing = true
 
@@ -123,6 +123,6 @@ stream = ExtResource( 13 )
 autoplay = true
 
 [connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
-[connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
+[connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
 [connection signal="pressed" from="Control/creditos" to="Control" method="_on_creditos_pressed"]

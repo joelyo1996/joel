@@ -1,10 +1,11 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Perro/perro2.gd" type="Script" id=1]
-[ext_resource path="res://Perro/imagenes del perro2/perrorojo.png" type="Texture" id=2]
+[ext_resource path="res://Perro/imagenes del perro2/perrorojooo.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-height = 77.9719
+radius = 22.8935
+height = 80.2128
 
 [node name="perro2" type="Node2D"]
 script = ExtResource( 1 )
@@ -16,12 +17,12 @@ collision_mask = 2
 [node name="Sprite" type="Sprite" parent="Area2D"]
 modulate = Color( 1, 0, 0, 1 )
 self_modulate = Color( 1, 0, 1, 1 )
-position = Vector2( -0.749986, 0.750004 )
-scale = Vector2( 0.404759, 0.408467 )
+position = Vector2( -2.24998, 8.25001 )
+scale = Vector2( 0.345288, 0.364349 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 4.10674, 0 )
+position = Vector2( 1.10672, 8.00001 )
 shape = SubResource( 1 )
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
@@ -31,4 +32,7 @@ margin_top = -73.5001
 margin_right = 43.0
 margin_bottom = -56.5001
 
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
