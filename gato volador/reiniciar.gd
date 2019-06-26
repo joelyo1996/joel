@@ -1,4 +1,4 @@
-extends NinePatchRect
+extends Node2D
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -6,14 +6,15 @@ extends NinePatchRect
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$ganaste.play()
+	$audioreiniciar.play()
 	pass # Replace with function body.
-
+func _on_reiniciar_pressed():
+	get_tree().change_scene("res://Interfaz.tscn")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
 
-func _on_volver_al_menu_pressed():
+func _on_Button_button_down():
 	get_tree().change_scene("res://Interfaz.tscn")
 	pass # Replace with function body.

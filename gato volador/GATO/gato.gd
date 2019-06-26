@@ -32,5 +32,5 @@ func _on_Area2D_area_entered(area):
 	vida_global.vida_jugador -= 25
 	if ($CanvasLayer/ProgressBar.value == 0):
 		queue_free()
-		get_tree().change_scene("res://Interfaz.tscn")
+		
 	pass # Replace with function body.
