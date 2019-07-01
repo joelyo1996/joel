@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://escenario2.gd" type="Script" id=1]
 [ext_resource path="res://Perro/perro2.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Perro/generador_enemigo.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Perro/generador de enemigo 2.tscn" type="PackedScene" id=8]
 [ext_resource path="res://script global/el gato volador.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Perro/generado_rata1.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -71,5 +72,11 @@ rotation = 0.00289247
 [node name="audiogato" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
 
+[node name="generador_rata1" parent="." instance=ExtResource( 10 )]
+position = Vector2( 478.271, 1122.47 )
+
+[node name="Timerrata1" type="Timer" parent="."]
+
 [connection signal="timeout" from="timerperrorojo" to="." method="_on_timerperrorojo_timeout"]
 [connection signal="timeout" from="timerperroverde" to="." method="_on_timerperroverde_timeout"]
+[connection signal="timeout" from="Timerrata1" to="." method="_on_Timerrata1_timeout"]

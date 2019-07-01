@@ -1,7 +1,7 @@
 extends Node2D
 export (PackedScene) var perro2
 export (PackedScene) var perro3
-# Declare member variables here. Examples:
+export (PackedScene) var rata1
 # var a = 2
 # var b = "text"
 
@@ -36,4 +36,14 @@ func _on_timerperroverde_timeout():
 	add_child(p3)
 	
 	p3.position = $caminoperroverde/PathFollow2D.position
+	pass # Replace with function body.
+
+
+func _on_Timerrata1_timeout():
+	$caminoperroverde/PathFollow2D.set_offset(randi())
+	
+	var p1 = rata1.instance()
+	add_child(p1)
+	
+	p1.position = $caminoperroverde/PathFollow2D.position
 	pass # Replace with function body.
