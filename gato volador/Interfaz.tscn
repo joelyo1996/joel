@@ -115,7 +115,7 @@ text = "creditos"
 position = Vector2( 527.483, 132.527 )
 scale = Vector2( 0.111885, 0.116001 )
 frames = SubResource( 3 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="sonidodemenu" type="AudioStreamPlayer2D" parent="."]

@@ -1,7 +1,7 @@
 extends Node2D
 export (PackedScene) var perro2
 export (PackedScene) var perro3
-export (PackedScene) var rata1
+var rata1 = load("res://Perro/Rata1.tscn")
 # var a = 2
 # var b = "text"
 
@@ -46,4 +46,6 @@ func _on_Timerrata1_timeout():
 	add_child(p1)
 	
 	p1.position = $caminoperroverde/PathFollow2D.position
+	
+	
 	pass # Replace with function body.

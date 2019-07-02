@@ -73,9 +73,18 @@ rotation = 0.00289247
 stream = ExtResource( 9 )
 
 [node name="generador_rata1" parent="." instance=ExtResource( 10 )]
-position = Vector2( 478.271, 1122.47 )
+position = Vector2( 144.061, 974.966 )
+
+[node name="generador_rata3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 475.922, 1417.45 )
+
+[node name="generador_rata2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 888.38, 1139.74 )
 
 [node name="Timerrata1" type="Timer" parent="."]
+wait_time = 1.39
+one_shot = true
+autostart = true
 
 [connection signal="timeout" from="timerperrorojo" to="." method="_on_timerperrorojo_timeout"]
 [connection signal="timeout" from="timerperroverde" to="." method="_on_timerperroverde_timeout"]
