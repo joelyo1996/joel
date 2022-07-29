@@ -5,7 +5,7 @@
 [ext_resource path="res://Perro/perro2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Fondo/fondo1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Bala/bala.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Perro/generador de enemigo 2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Perro/generador_de_enemigo 2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GATO/gato.tscn" type="PackedScene" id=7]
 [ext_resource path="res://barra de vida/barra.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sonido/musica_gato.mp3" type="AudioStream" id=9]

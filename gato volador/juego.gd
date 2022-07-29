@@ -46,7 +46,7 @@ func _on_perrotimer_timeout():
 	p1.position = $camino/PathFollow2D.position
 	
 func _process(delta):
-	if (vida_global.puntos == 25):
+	if (vida_global.puntos >= 25):
 		get_tree().change_scene("res://pasaste_de_nivel.tscn")
 	if (vida_global.vida_jugador == 0):
 		get_tree().change_scene("res://reiniciar.tscn")
