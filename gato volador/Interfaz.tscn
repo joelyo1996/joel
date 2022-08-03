@@ -115,13 +115,13 @@ text = "creditos"
 position = Vector2( 527.483, 132.527 )
 scale = Vector2( 0.111885, 0.116001 )
 frames = SubResource( 3 )
-frame = 4
+frame = 3
 playing = true
 
 [node name="sonidodemenu" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 13 )
 autoplay = true
+
 [connection signal="pressed" from="Control/jugar" to="Control" method="_on_jugar_pressed"]
-[connection signal="pressed" from="Control/salir" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="Control/salir" to="Control" method="_on_salir_pressed"]
 [connection signal="pressed" from="Control/creditos" to="Control" method="_on_creditos_pressed"]

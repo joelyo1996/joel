@@ -33,5 +33,4 @@ text = "Te han matado los perros asesinos "
 stream = ExtResource( 4 )
 autoplay = true
 
-[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

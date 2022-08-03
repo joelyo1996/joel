@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/musica_gato.mp3-89095188aa9486fa26d743a9b9098d8f.mp3str"
+
+[deps]
+
+source_file="res://sonido/musica_gato.mp3"
+dest_files=[ "res://.import/musica_gato.mp3-89095188aa9486fa26d743a9b9098d8f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
