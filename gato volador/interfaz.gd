@@ -5,8 +5,8 @@ func _on_jugar_pressed():
 
 
 func _on_salir_pressed():
-	OS.shell_open("https://joelyo1996.itch.io/")
-	get_tree().quit()
+	get_tree().change_scene("res://Publicidad/Ayuda.tscn")
+
 	
 
 func _on_creditos_pressed():
