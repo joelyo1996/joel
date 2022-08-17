@@ -12,10 +12,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if (vida_global.puntos == 100):
+	if (vida_global.puntos >= 100):
 		get_tree().change_scene("res://ganaste.tscn")
 	if (vida_global.vida_jugador == 0):
-		get_tree().change_scene("res://reiniciar.tscn")
+		get_tree().change_scene("res://Publicidad/Ayuda.tscn")
 	pass
 
 

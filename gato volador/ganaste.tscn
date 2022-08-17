@@ -44,12 +44,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -523.25
-margin_top = -162.5
-margin_right = 511.75
-margin_bottom = 85.4999
-custom_fonts/font = SubResource( 2 )
+margin_left = -518.5
+margin_top = -221.5
+margin_right = 516.5
+margin_bottom = 26.4999
 custom_colors/font_color = Color( 0.266667, 0.721569, 0.247059, 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Felicidades ganaste
 
 lograste la venganza del gato "
@@ -57,10 +57,10 @@ align = 1
 valign = 1
 
 [node name="volver_al_menu" type="Button" parent="."]
-margin_left = 368.5
-margin_top = 490.0
-margin_right = 681.5
-margin_bottom = 578.0
+margin_left = 373.0
+margin_top = 590.0
+margin_right = 686.0
+margin_bottom = 678.0
 custom_fonts/font = SubResource( 3 )
 text = "volver al menu"
 
@@ -68,7 +68,7 @@ text = "volver al menu"
 position = Vector2( 534.374, 122.625 )
 scale = Vector2( 0.215413, 0.168668 )
 frames = SubResource( 4 )
-frame = 4
+frame = 3
 playing = true
 
 [node name="ganaste" type="AudioStreamPlayer2D" parent="."]

@@ -49,7 +49,7 @@ func _process(delta):
 	if (vida_global.puntos >= 25):
 		get_tree().change_scene("res://pasaste_de_nivel.tscn")
 	if (vida_global.vida_jugador == 0):
-		get_tree().change_scene("res://reiniciar.tscn")
+		get_tree().change_scene("res://Publicidad/Ayuda.tscn")
 
 
 func _on_perrorojotimer_timeout():
