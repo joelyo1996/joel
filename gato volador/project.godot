@@ -16,7 +16,7 @@ _global_script_class_icons={
 
 config/name="Gato volador"
 run/main_scene="res://Interfaz.tscn"
-config/icon="res://icon.png"
+config/icon="res://GATO/icono.png"
 
 [autoload]
 

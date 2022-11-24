@@ -1,11 +1,12 @@
 extends Control
 
 func _on_jugar_pressed():
-	get_tree().change_scene("res://Publicidad/Publicidad.tscn")
+	get_tree().change_scene("res://loading.tscn")
 
 
 func _on_salir_pressed():
-	get_tree().change_scene("res://Publicidad/Ayuda.tscn")
+	OS.shell_open("https://joelyo1996.itch.io/")
+	get_tree().quit()
 
 	
 

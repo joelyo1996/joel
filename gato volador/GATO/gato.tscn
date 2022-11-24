@@ -32,6 +32,7 @@ script = ExtResource( 1 )
 position = Vector2( 287.193, 55.5157 )
 scale = Vector2( 0.613492, 0.653691 )
 frames = SubResource( 1 )
+frame = 2
 playing = true
 
 [node name="canon1" type="Node2D" parent="."]
